@@ -47,53 +47,8 @@ SendMode Input
 ;F18::Run http://www.reddit.com
 ;F19::Run https://facebook.com
 
-; --------------------------------------------------------------
-; OS X system shortcuts
-; --------------------------------------------------------------
 
-; Make Ctrl + S work with cmd (windows) key
-#s::^s
-
-; Selecting
-#a::^a
-
-; Copying
-#c::^c
-
-; Pasting
-#v::^v
-
-; Cutting
-#x::^x
-
-; Opening
-#o::^o
-
-; Finding
-#f::Send ^f
-
-; Undo
-#z::^z
-
-; Redo
-#y::^y
-
-; New tab
-#t::^t
-
-; close tab
-#w::^w
-
-; Close windows (cmd + q to Alt + F4)
-#q::Send !{F4}
-
-; Remap Windows + Tab to Alt + Tab.
-Lwin & Tab::AltTab
-
-; minimize windows
-#m::WinMinimize,a
-
-
+#InputLevel 2
 ; --------------------------------------------------------------
 ; OS X keyboard mappings for text editing
 ; --------------------------------------------------------------
@@ -116,6 +71,60 @@ Lwin & Tab::AltTab
 ^d::Send {Delete}
 ^j::Send {Enter}
 ^k::Send +{End}{Delete}
+
+#InputLevel 1
+; --------------------------------------------------------------
+; OS X system shortcuts
+; --------------------------------------------------------------
+
+; Make Ctrl + S work with cmd (windows) key
+#s::^s
+
+; Selecting
+#a::^a
+
+; Copying
+#c::Send ^c
+
+; Pasting
+#v::Send ^v
+
+; Cutting
+#x::Send ^x
+
+; Opening
+#o::^o
+
+; Finding
+#f::Send ^f
+
+; Undo
+#z::^z
+
+; Redo
+#y::^y
+
+; Reload
+#r::Send ^r
+
+; New tab
+#t::Send ^t
+
+; Close tab
+#w::Send ^w
+
+; Close window (cmd + q to Alt + F4)
+#q::Send !{F4}
+
+; Remap Windows + Tab to Alt + Tab.
+Lwin & Tab::AltTab
+
+; minimize windows
+#m::WinMinimize,a
+
+
+#InputLevel 0
+#^r::Send #r
 
 
 ; --------------------------------------------------------------
