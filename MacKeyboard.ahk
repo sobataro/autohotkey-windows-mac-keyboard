@@ -95,6 +95,30 @@ Lwin & Tab::AltTab
 
 
 ; --------------------------------------------------------------
+; OS X keyboard mappings for text editing
+; --------------------------------------------------------------
+
+; Cursor moving
+^n::Send {Down}
+^p::Send {Up}
+^f::Send {Right}
+^b::Send {Left}
+^a::Send {Home}
+^e::Send {End}
+^+n::Send +{Down}
+^+p::Send +{Up}
+^+f::Send +{Right}
+^+b::Send +{Left}
+^+a::Send +{Shift Home}
+^+e::Send +{End}
+
+; Text editing
+^d::Send {Delete}
+^j::Send {Enter}
+^k::Send +{End}{Delete}
+
+
+; --------------------------------------------------------------
 ; OS X keyboard mappings for special chars
 ; --------------------------------------------------------------
 
