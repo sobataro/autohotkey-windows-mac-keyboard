@@ -17,6 +17,16 @@
 SetTitleMatchMode 2
 SendMode Input
 
+; --------------------------------------------------------------
+; special settings for all system-wide
+; --------------------------------------------------------------
+
+#InputLevel 0
+#^r::Send #r
+
+
+; settings below are not suitable for ConEmu window
+#IfWinNotActive ahk_class VirtualConsoleClass
 
 ; --------------------------------------------------------------
 ; media/function keys all mapped to the right option key
@@ -121,10 +131,6 @@ Lwin & Tab::AltTab
 
 ; minimize windows
 #m::WinMinimize,a
-
-
-#InputLevel 0
-#^r::Send #r
 
 
 ; --------------------------------------------------------------
